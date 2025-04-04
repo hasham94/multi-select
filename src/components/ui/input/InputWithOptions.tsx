@@ -20,7 +20,16 @@ const InputContainer = styled.div<{ isFocused: boolean; disabled?: boolean }>`
   }
 `;
 
-const InputWithOptions: React.FC<any> = ({
+interface InputWithOptionsProps {
+    children?: React.ReactNode;
+    isFocused: boolean;
+    disabled?: boolean;
+    onClick?: () => void;
+    inputProps: React.InputHTMLAttributes<HTMLInputElement>;
+    inputRef: React.Ref<HTMLInputElement>;
+}
+
+const InputWithOptions: React.FC<InputWithOptionsProps> = ({
     children,
     isFocused,
     disabled,
@@ -34,7 +43,7 @@ const InputWithOptions: React.FC<any> = ({
             disabled={disabled}
             onClick={onClick}
         >
-            {children}
+            {children ? children : null}
             <InputBase ref={inputRef} disabled={disabled} {...inputProps} />
         </InputContainer>
     );
