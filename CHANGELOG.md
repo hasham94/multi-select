@@ -24,3 +24,6 @@ Select will show the selected options as badge with the option  to remove, which
  2. InputWithOptions
 
  -- DropDown (Branch: feature/add-dropdown-container)
+
+ -- Chip (Branch: feature/add-select-list-and-option)
+ -- ListItem (Branch: feature/add-select-list-and-option)
