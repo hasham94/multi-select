@@ -22,18 +22,20 @@ const ChipRemove = styled.span`
 `;
 
 interface ChipProps {
-    children: React.ReactNode;
-    onRemove: (e: React.MouseEvent) => void;
+  children: React.ReactNode;
+  onRemove: (e: React.MouseEvent) => void;
 }
 
-export const Chip: React.FC<ChipProps> = ({ children, onRemove }) => {
-    return (
-        <ChipContainer>
-            {children}
-            <ChipRemove onClick={onRemove}>
-                {/* this we can replace with icon */}
-                x
-            </ChipRemove>
-        </ChipContainer>
-    );
+const Chip: React.FC<ChipProps> = ({ children, onRemove }) => {
+  return (
+    <ChipContainer>
+      {children}
+      <ChipRemove onClick={onRemove}>
+        {/* this we can replace with icon */}
+        x
+      </ChipRemove>
+    </ChipContainer>
+  );
 };
+
+export default Chip
