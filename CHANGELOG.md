@@ -13,3 +13,9 @@ Drop Down contaier will display the available options and could possibly be spli
 
 ## Select
 Select will show the selected options as badge with the option  to remove, which can also be used for other components.
+
+-------------------------------------------------------------------------------
+
+# Added Features
+
+ -- Input Wrapper
