@@ -27,3 +27,5 @@ Select will show the selected options as badge with the option  to remove, which
 
  -- Chip (Branch: feature/add-select-list-and-option)
  -- ListItem (Branch: feature/add-select-list-and-option)
+
+ -- MultiSelect (Branch: feature/add-multi-select-component)
