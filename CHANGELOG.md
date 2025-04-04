@@ -18,4 +18,7 @@ Select will show the selected options as badge with the option  to remove, which
 
 # Added Features
 
- -- Input Wrapper
+ -- Input Wrapper (Branch: feature/add-input-wrapper)
+ Added two components
+ 1. InputBase
+ 2. InputWithOptions
