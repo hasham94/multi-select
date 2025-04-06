@@ -29,7 +29,7 @@ const Dropdown: React.FC<DropdownProps> = ({
 }) => {
     if (!isOpen) return null;
 
-    return <DropdownContainer ref={dropdownRef}>{children}</DropdownContainer>;
+    return <DropdownContainer role="listbox" ref={dropdownRef}>{children}</DropdownContainer>;
 };
 
 export default Dropdown

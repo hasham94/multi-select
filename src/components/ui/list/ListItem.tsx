@@ -35,6 +35,7 @@ const ListItem: React.FC<ListItemProps> = ({
 }) => {
     return (
         <ListItemContainer
+            role="option"
             isSelected={isSelected}
             disabled={disabled}
             onClick={onClick}
